@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">Givera  - We Gives You What You Desire</title>
+    <link rel="icon" href="material/logo/logo nobg new 4.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<style>
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+  --color-gray: rgb(248, 196, 180);
+  --color-lighter-gray: #e3e5ed;
+  --color-light-gray: #f7f7fa;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--color-gray);
+}
+
+hr {
+  height: 0.1rem;
+  width: 100%;
+  background-color: var(--color-light-gray);
+  border: 0;
+  margin: 2rem 0;
+}
+
+.container6 {
+  max-width: 40rem;
+  padding: 10vw 2rem 0;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.form1 {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.field1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid var(--color-lighter-gray);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.field__label {
+  color: var(--color-gray);
+  font-size: 0.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem
+}
+
+.field__input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+.field:focus-within {
+  border-color: #000;
+}
+
+.fields {
+  display: grid;
+  grid-gap: 1rem;
+}
+.fields--2 {
+  grid-template-columns: 1fr 1fr;
+}
+.fields--3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button1 {
+  background-color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+.button:focus-visible {
+  background-color: #333;
+}
+</style>
+
+<body>
+
+    <header>
+        <nav>
+    <ul class="list">
+        <img src="material/logo/logo nobg new 4.png" alt="" style="height: 12rem;position: relative;bottom: 2.5rem;left: 2rem;">
+
+        <center>
+        <li class="b" ><a href="home.html"> H O M E </a> </li>
+        <li class="b" ><a href="about us.html"> A B O U T  U S </a></li>
+        <li class="b" ><a href="all categories.html"> A l l  C A T E G O R I E S </a> </li>
+        <li class="b" ><a href="contact us.html"> C O N T A C T  U S</a> </li>
+    </center>
+    </ul>
+</nav>
+</header>
+<main class="body-col" style="background-color:  rgb(182, 49, 49);">
+    <div class="container6">
+        <h1>Shipping</h1>
+        <p>Please enter your shipping details.</p>
+        <hr />
+        <div class="form1">
+          
+        <div class="fields fields--2">
+          <label class="field1">
+            <span class="field__label" for="firstname">First name</span>
+            <input class="field__input" type="text" id="firstname" value="MESUM" />
+          </label>
+          <label class="field1">
+            <span class="field__label" for="lastname">Last name</span>
+            <input class="field__input" type="text" id="lastname" value="ALI" />
+          </label>
+        </div>
+        <label class="field1">
+          <span class="field__label" for="address">Address</span>
+          <input class="field__input" type="text" id="address" />
+        </label>
+        <label class="field1">
+          <span class="field__label" for="country">Country</span>
+          <select class="field__input" id="country">
+            <option value="Pakistan">PAKISTAN</option>
+            <option value="unitedstates">United States</option>
+          </select>
+        </label>
+        <div class="fields fields--3">
+          <label class="field1">
+            <span class="field__label" for="zipcode">Zip code</span>
+            <input class="field__input" type="text" id="zipcode" />
+          </label>
+          <label class="field1">
+            <span class="field__label" for="city">City</span>
+            <input class="field__input" type="text" id="city" />
+          </label>
+          <label class="field1">
+            <span class="field__label" for="state">State</span>
+            <select class="field__input" id="state">
+              <option value="Washington dc">Washington</option>
+              <option value="Sindh">Sindh</option>
+            </select>
+          </label>
+        </div>
+        </div>
+        <hr>
+        <button class="button1">Continue</button>
+        <br>
+      </div>
+</main>
+<footer>
+    <div class="container3">
+      <div class="row1">
+        <div class="footer-col ">
+          <h4> A B O U T  G I V E R A</h4><br>
+          <ul class="col1">
+            <li><a href="about us.html"> A B O U T  U S</a></li>
+            <li><a href="all categories.html">O U R  S E R V I C E S</a> </li>
+            <li><a href="privacypolicy.html">P R I V A C Y   P O L I C Y</a> </li>
+            <li><a href="privacypolicy.html">A F I L I A T E  P R O G R A M S</a></li>
+          </ul>
+        </div>
+        <div class="footer-col ">
+          <h4> G E T  H E L P</h4><br>
+          <ul class="col2">
+            <li><a href="FAQ.html">F A Q </a></li>
+            <li><a href="shipping.html">S H I P P I N G</a></li>
+            <li><a href="orderstatus.html">O R D E R  S T A T U S </a></li>
+            <li><a href="paymentoptions.html">P A Y M E N T  O P T I O N S</a></li>
+          </ul>
+        </div>
+        <div class="footer-col ">
+          <h4> O N L I N E  S H O P </h4><br>
+          <ul class="col3">
+            <li><a href="birthday gifts.html">B I R T H D A Y  G I F T S</a></li>
+            <li><a href="chocolate.html">C H O C O L A T E S</a></li>
+            <li><a href="coorporate.html">C O R P O R A T E S  G I F T S</a></li>
+            <li><a href="fashion.html">F A S H I O N  A C C E S S O R I E S</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4> F O L L O W  U S </h4><br>
+        <div class="social-links">
+         <a href="https://www.facebook.com/profile.php?id=100010562954857&mibextid=ZbWKwL"> <i class="fab fa-facebook-f"></i></a>
+         <a href="https://instagram.com/pain_be_willin?igshid=YmMyMTA2M2Y="> <i class="fab fa-instagram"></i></a>
+         <a href="https://www.snapchat.com/add/messi_here?share_id=vEOer_5dsUQ&locale=en-US"> <i class="fab fa-snapchat"></i></a>
+        </div> 
+  
+      </div>
+    </div>
+  <center><h6 class="copyright"> 	© 2023 | GIVERA ~ All Rights Reserved</h6></center>
+  </footer>
+</body>
+</html>

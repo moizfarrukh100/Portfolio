@@ -1,0 +1,567 @@
+html
+{
+    font-size: 62.5%;
+}
+*
+    {
+        margin: 0%;
+        padding: 0%;
+     }
+#loading
+{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(248, 196, 180) url(material/logo/logo\ nobg\ new\ 4.png)
+     no-repeat center ;
+    z-index: 99999;
+
+}    
+.list
+{
+    font-family: 'Patrick Hand', cursive;
+}
+li
+{  
+    display: inline;
+    text-align: center;
+    position: relative;
+    padding: 3rem;
+    color: rgb(	255, 215, 0);
+    bottom: 10rem;
+
+}
+.b a
+{
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    color:  rgb(182, 49, 49);
+}
+.b a::before
+{
+    content: "";
+    position: absolute;
+    left:0 ;
+    top:100%;
+    width:0%;
+    height: 0.3rem;
+    background-color: rgb(255, 9, 111);
+    transition: all 0.5s linear;
+}
+.b a:hover::before
+{
+    width: 100%;
+    background-color: rgb(218, 172, 172);
+}
+
+nav
+{
+    height: 7rem;
+    background-color: rgb(248, 196, 180);
+
+}
+
+
+.bg1
+{
+background-color:  rgb(248, 196, 180);
+
+}
+.container1
+{
+    background-color: rgb(248, 196, 180) ;
+    margin-top: 50rem;
+
+
+}
+.list1 
+{
+
+    padding: 2rem;
+    padding-left: 1rem;
+
+    font-weight: bolder;
+
+
+
+}
+.list1 img
+{
+    height: 12rem;
+    border-radius: 50%;
+}
+.list1 li
+{
+    top: 2rem;
+    color: rgb(179, 33, 33);
+
+
+
+
+}
+
+
+.me a
+{
+
+    text-decoration: none;
+    color: rgb(179, 33, 33);
+ 
+}
+.me a::before
+{
+    content: "";
+    position:absolute;
+    left: 0; 
+    top:60%;
+    width:0%;
+    height: 0.2rem;
+    background-color: rgb(255, 9, 111);
+    transition: all 0.5s linear;
+}
+.me a:hover::before
+{
+    width: 100%;
+    background-color: rgb(182, 49, 49);
+}
+.container
+{
+    display: flex;
+    height: 50rem;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(material/slider/Panda-Gifts1.jpg);
+    background-size: 100% 100%;
+    box-shadow: 0.1rem 0.2rem 1rem 0.5rem rgb(248, 196, 180);
+    animation:slider 9s infinite linear ;   
+}
+@keyframes slider 
+{
+    0% 
+    {
+        background-image:url(material/slider/Panda-Gifts1.jpg) ;background-size: 100% 100%;
+    }
+    40%
+    {
+        background-image:url(material/slider/panda4.jpg) ;background-size: 100% 100%;
+    }
+    90%
+    {
+        background-image: url(material/slider/panda5.jpg);background-size: 100% 100%;
+    }
+}
+.d
+{
+    background-color: rgb(182, 49, 49);
+    font-family: 'Patrick Hand', cursive;
+    font-size: x-large;
+    font-weight: 900;
+    padding: 2rem;
+    color: rgb(248, 196, 180);
+    margin-top: 0.4rem;
+}
+.e 
+{
+    background-color:  rgb(248, 196, 180);
+}
+.container2
+{
+   background-color: rgb(248, 196, 180); 
+}
+.row
+{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: inline-block ;
+    margin-left: 12rem;
+    margin-top: 8rem;
+    padding: 1rem 1rem;
+    transition: 1s;
+
+} 
+.row img
+{
+    display: flex;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.row :hover
+{
+    transform: scale(1.3);
+    z-index: 2;
+
+}
+.f
+{
+    padding-bottom: 2rem;
+
+}
+.end
+{
+    background-color: rgb(248, 196, 180) ;
+    text-align: center;
+}
+.end h4
+{
+    color: dimgrey;
+    height: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
+    font-family: 'Patrick Hand', cursive;
+    text-transform: capitalize;
+}
+.footer
+{
+   background-color:rgb(248, 196, 180) ; 
+    padding: 7rem 0;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.container3
+{
+    width: 100%;
+    margin: auto ;
+    background-color: rgb(182, 49, 49) ;
+}
+.row1
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row1 .ul
+{
+    list-style: none ;
+}
+.footer-col
+{
+    width: 25%;
+
+}
+.footer-col h4
+{
+    font-size: 1.8rem;
+    color: rgb(248, 196, 180);
+    text-transform: capitalize;
+    margin-bottom: 8rem;
+    font-weight: 500;
+    position: relative;
+    top: 2rem;
+    margin-left: 1rem;
+ 
+}
+.footer-col h4::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color: rgb(248, 196, 180);
+    height: .2rem;
+    box-sizing: border-box;
+    width: 8rem;
+}
+.footer-col ul li :not(:last-child)
+{
+    margin-bottom: 1rem;
+    top: 3rem;
+
+}
+.footer-col ul li a 
+{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: rgb(182, 49, 49) ;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(248, 196, 180);
+    display: flex;
+    transition: all 0.3s ease;
+}
+.col1
+{
+    padding-top: 3rem;
+    padding-left: 1rem;
+    
+}
+.col2
+{
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+.col3
+{
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+.footer-col ul li a:hover
+{
+    color: rgb(248, 196, 180);
+    padding-left: 1rem;
+
+}
+.footer-col .social-links a
+{
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(182, 49, 49);
+    margin: 0 1rem 1rem 0;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 50%;
+    color:rgb(248, 196, 180);
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover
+{
+    color:rgb(248, 196, 180);
+    background-color: rgb(177, 68, 68);
+}
+.copyright
+{
+    height: 2rem;
+    color: rgb(248, 196, 180);
+    font-family: 'Patrick Hand', cursive;
+    padding-bottom: 2rem;
+}
+@media(max-width: 767px) 
+{
+    .footer-col
+    {
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+}
+@media(max-width: 574px) 
+{
+    .footer-col
+    {
+        width: 100%;
+    }
+}
+.p1
+{
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.container4 {
+    margin: 3rem auto;
+}
+
+.container4.card {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    border-radius: 0px;
+}
+
+
+
+
+.btn.btn-primary {
+    background-color: #ddd;
+    color: black;
+    box-shadow: none;
+    border: none;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.btn.btn-primary:focus {
+    box-shadow: none;
+}
+
+.container4 .card .img-box {
+    width: 8rem;
+    height: 5rem;
+}
+
+.container4 .card img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.container4 .card .number {
+    font-size: 2.4rem;
+}
+
+.container4 .card-body .btn.btn-primary .fab.fa-cc-paypal {
+    font-size: 3.2rem;
+    color: #3333f7;
+}
+
+.fab.fa-cc-amex {
+    color: #1c6acf;
+    font-size: 3.2rem;
+}
+
+.fab.fa-cc-mastercard {
+    font-size: 32rem;
+    color: red;
+}
+
+.fab.fa-cc-discover {
+    font-size: 3.2rem;
+    color: orange;
+}
+
+.c-green {
+    color: green;
+}
+
+.box {
+    height: 4rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+}
+
+.btn.btn-primary.payment {
+    background-color: #1c6acf;
+    color: white;
+    border-radius: 0rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4rem;
+}
+
+
+.form__div {
+    height: 5rem;
+    position: relative;
+    margin-bottom: 2.4rem;
+}
+
+.form-control {
+    width: 100%;
+    height: 4.5rem;
+    font-size: 1.4rem;
+    border: .1rem solid #DADCE0;
+    border-radius: 0;
+    outline: none;
+    padding: .2rem;
+    background: none;
+    box-shadow: none;
+}
+
+.form__label {
+    position: absolute;
+    left: 1.6rem;
+    top: 1rem;
+    background-color: #fff;
+    color: #80868B;
+    font-size: 1.6rem;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.form-control:focus+.form__label {
+    top: -0.8rem;
+    left: 1.2rem;
+    color: #1A73E8;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.form-control:not(:placeholder-shown).form-control:not(:focus)+.form__label {
+    top: -0.8rem;
+    left: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.container5
+{
+    height: 100vh;
+}
+.greet
+{
+    margin-left: 45rem;
+    margin-top: 4rem;
+}
+.intro h2
+{
+    font-family: 'Patrick Hand',cursive;
+    height: 6rem;
+    margin: 3rem 3rem;
+}
+.intro p
+{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 300; 
+    margin-left: 4rem;
+} 
+.list9
+{
+    padding: 7rem 1rem;
+    margin: 3rem 1rem;
+    color: rgb(182, 49, 49);
+    font-family: 'Patrick Hand',cursive;
+}
+.list9 ul
+{
+    list-style-type: disc;
+    padding-top: 3rem;
+}
+.list9 li
+{
+    color: rgb(182, 49, 49);
+}
+.container12
+{
+    background-color: lightyellow;
+}
+.row14
+{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: inline-block ;
+    margin-left: 6rem;
+    margin-top: 5rem;
+    padding: 1rem 1rem;
+    transition: 1s;
+}
+.row14 img
+{
+    display: flex;
+    width: 100%;
+    border-radius: 0.5rem
+}
+.row14 :hover
+{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.container13
+{
+    background-color: rgb(255, 255, 180);
+}
+@media(max-width:1080px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:720px){
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width:480px){
+    html{
+        font-size: 40%;
+    }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">Givera  - We Gives You What You Desire</title>
+    <link rel="icon" href="material/logo/logo nobg new 4.png" type="image/x-icon">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+main {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: flex;
+  min-height: 100vh;
+}
+.container7 {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+.accordion .accordion-item {
+  border-bottom: 0.1rem solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 0.1rem solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 0.1rem solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1rem 1.5rem 1rem 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 1.8rem;
+  right: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0.1rem solid;
+  border-radius: 2.2rem;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0.9rem;
+  left: 0.5rem;
+  width: 1rem;
+  height: 0.2rem;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0.5rem;
+  left: 0.9rem;
+  width: 0.2rem;
+  height: 1rem;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9rem;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+</style>
+<body style="background-color: rgb(182, 49, 49);">
+    <header>
+        <nav>
+    <ul class="list">
+        <img src="material/logo/logo nobg new 4.png" alt="" style="height: 12rem;position: relative;bottom: 2.5rem;left: 2rem;">
+
+        <center>
+        <li class="b" ><a href="home.html"> H O M E </a> </li>
+        <li class="b" ><a href="about us.html"> A B O U T U S </a></li>
+        <li class="b" ><a href="all categories.html">A l l    C A T E G O R I E S </a> </li>
+        <li class="b" ><a href="contact us.html"> C O N T A C T U S</a> </li>
+    </center>
+    </ul>
+</nav>
+</header>
+        <main style="display: flex;margin-top: 15rem;margin-left: 15rem;background-color: rgb(182, 49, 49);">
+            <div class="container7">
+                <h2 style="color: rgb(248, 196, 180);">Frequently Asked Questions</h2>
+                <div class="accordion">
+                  <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false">
+                      <span class="accordion-title" style="color: rgb(248, 196, 180);">Any queries about shipping?</span>
+                      <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-2" aria-expanded="false">
+                      <span class="accordion-title" style="color: rgb(248, 196, 180);">What are requirments for delivery?</span>
+                      <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-3" aria-expanded="false">
+                      <span class="accordion-title" style="color: rgb(248, 196, 180);">About payment methods?</span>
+                      <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-4" aria-expanded="false">
+                      <span class="accordion-title" style="color:rgb(248, 196, 180) ; ">Is return and exhange available ?</span>
+                      <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button id="accordion-button-5" aria-expanded="false">
+                      <span class="accordion-title" style="color:  rgb(248, 196, 180)"> Cash=on delivery acceptance ?</span>
+                      <span class="icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-content">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                        Ut tortor pretium viverra suspendisse potenti.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+        </main>
+        <script src="script.js">
+        const items = document.querySelectorAll('.accordion button');
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+</script>
+</body>
+</html>
